@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: Spring-OAuth
+server:
+  port: 8009
+security:
+  oauth2:
+    resource:
+      filter-order: 3
