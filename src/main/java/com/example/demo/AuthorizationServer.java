@@ -11,13 +11,12 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.A
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
-import org.springframework.security.oauth2.provider.token.TokenStore;
 
 @Configuration
 @EnableAuthorizationServer
-public class ApplicationServer extends AuthorizationServerConfigurerAdapter {
+public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
 
-	Logger logger = LoggerFactory.getLogger(ApplicationServer.class);
+	Logger logger = LoggerFactory.getLogger(AuthorizationServer.class);
 
 	@Autowired
 	@Qualifier("authenticationManagerBean")
